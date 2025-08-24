@@ -7,7 +7,7 @@ function volume_sphere() {
 	if(radius < 0 || !radius){
 		document.querySelector("#volume").value = "NaN";
 	}else{
-		let volume = 4/3 * 3.14 * radius *radius*radius;
+		let volume = 4/3 * Math.PI * radius *radius*radius;
 	    document.querySelector("#volume").value = volume.toFixed(4);
 	}
 	
